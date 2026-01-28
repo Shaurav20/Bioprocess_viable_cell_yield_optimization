@@ -1,0 +1,219 @@
+
+Fit Model(
+	Y( Log( :VCD ) ),
+	Effects(
+		:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+		:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+		:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+		:"time[h]"n * :"time[h]"n * :"time[h]"n
+	),
+	Personality( "Standard Least Squares" ),
+	History(
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed,
+			:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded, :pH,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln & Excluded, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc, :Gln, :reactor_temperature, :pH, :reactor_volume,
+			:disc_volume_feed, :Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc, :Gln, :reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n & Excluded
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n & Excluded
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln & Excluded,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln & Excluded,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln & Excluded,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc, :Gln, :reactor_temperature, :pH, :reactor_volume,
+			:disc_volume_feed, :Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		)
+	),
+	Emphasis( "Effect Leverage" ),
+	Run(
+		:VCD << {Summary of Fit( 1 ), Analysis of Variance( 1 ),
+		Parameter Estimates( 1 ), Lack of Fit( 0 ), Scaled Estimates( 0 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Studentized Residuals( 0 ),
+		Plot Effect Leverage( 1 ), Plot Residual by Normal Quantiles( 0 ),
+		Box Cox Y Transformation( 0 ), Profiler(
+			1,
+			Confidence Intervals( 1 ),
+			Desirability Functions( 1 ),
+			:VCD << Response Limits(
+				{Lower( -0.0378816428721988, 0.066 ),
+				Middle( 2.36924811027299, 0.5348 ),
+				Upper( 4.13775160237965, 0.9292 ), Goal( "Maximize" ),
+				Importance( 1 )}
+			),
+			Arrange in Rows( 4 ),
+			Reorder X Variables(
+				:"time[h]"n, :Glc, :Gln, :reactor_temperature, :pH, :reactor_volume,
+				:disc_volume_feed
+			),
+			Term Value(
+				:"time[h]"n( 130.497882488946, Lock( 0 ), Show( 1 ) ),
+				:Glc( 220.929464601168, Lock( 0 ), Show( 1 ) ),
+				:Gln( 0, Lock( 0 ), Show( 1 ) ),
+				:reactor_temperature( 36.56128790479, Lock( 0 ), Show( 1 ) ),
+				:pH( 6.94189782778311, Lock( 0 ), Show( 1 ) ),
+				:reactor_volume( 0.897026108251884, Lock( 0 ), Show( 1 ) ),
+				:disc_volume_feed( 0.0394170746789314, Lock( 0 ), Show( 1 ) )
+			),
+			Simulator(
+				1,
+				Factors(
+					:"time[h]"n << Fixed( 130.497882488946 ),
+					:Glc << Fixed( 220.929464601168 ), :Gln << Fixed( 0 ),
+					:reactor_temperature << Fixed( 36.56128790479 ),
+					:pH << Fixed( 6.94189782778311 ),
+					:reactor_volume << Fixed( 0.897026108251884 ),
+					:disc_volume_feed << Fixed( 0.0394170746789314 )
+				),
+				Responses( :VCD << Add Random Noise( 0.310188849254271 ) ),
+				Resimulate
+			)
+		)}
+	),
+	SendToReport(
+		Dispatch( {"Whole Model", "Parameter Estimates"}, "VIF", NumberColBox,
+			{Visibility( "Visible" )}
+		),
+		Dispatch( {"Prediction Profiler"}, "2.240897", TextBox,
+			{Set Text( "4.225496" )}
+		),
+		Dispatch( {"Prediction Profiler"}, "[2.142822, ", TextBox,
+			{Set Text( "[3.659955, " )}
+		),
+		Dispatch( {"Prediction Profiler"}, "2.34346]", TextBox,
+			{Set Text( "4.878425]" )}
+		),
+		Dispatch( {"Prediction Profiler"}, "0", TextBox, {Set Text( "0.944531" )} ),
+		Dispatch( {"Prediction Profiler", "Simulator"}, "Simulate to Table",
+			OutlineBox,
+			{Close( 0 )}
+		),
+		Dispatch( {"Prediction Profiler", "Simulator", "Simulate to Table"},
+			"Sequencing", OutlineBox,
+			{Close( 0 )}
+		)
+	)
+);

@@ -1,0 +1,164 @@
+
+Fit Model(
+	Y( Log( :VCD ) ),
+	Effects(
+		:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+		:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+		:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+		:"time[h]"n * :"time[h]"n * :"time[h]"n
+	),
+	Personality( "Standard Least Squares" ),
+	History(
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed,
+			:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded, :pH,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln & Excluded, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc, :Gln, :reactor_temperature, :pH, :reactor_volume,
+			:disc_volume_feed, :Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc, :Gln, :reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln & Excluded,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n & Excluded
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n & Excluded
+		),
+		Effects(
+			:"time[h]"n & Excluded, :Glc & Excluded, :Gln,
+			:reactor_temperature & Excluded, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed & Excluded,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature & Excluded,
+			:pH & Excluded, :reactor_volume & Excluded, :disc_volume_feed,
+			:Glc * :Gln & Excluded, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH & Excluded,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln & Excluded,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume & Excluded, :disc_volume_feed, :Glc * :Gln & Excluded,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln & Excluded,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc & Excluded, :Gln, :reactor_temperature, :pH,
+			:reactor_volume, :disc_volume_feed, :Glc * :Gln,
+			:"time[h]"n * :"time[h]"n, :"time[h]"n * :"time[h]"n * :"time[h]"n
+		),
+		Effects(
+			:"time[h]"n, :Glc, :Gln, :reactor_temperature, :pH, :reactor_volume,
+			:disc_volume_feed, :Glc * :Gln, :"time[h]"n * :"time[h]"n,
+			:"time[h]"n * :"time[h]"n * :"time[h]"n
+		)
+	),
+	Emphasis( "Effect Leverage" ),
+	Run(
+		:VCD << {Summary of Fit( 1 ), Analysis of Variance( 1 ),
+		Parameter Estimates( 1 ), Lack of Fit( 0 ), Scaled Estimates( 0 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Studentized Residuals( 0 ),
+		Plot Effect Leverage( 1 ), Plot Residual by Normal Quantiles( 0 ),
+		Box Cox Y Transformation( 0 )}
+	),
+	SendToReport(
+		Dispatch( {"Whole Model", "Parameter Estimates"}, "VIF", NumberColBox,
+			{Visibility( "Visible" )}
+		)
+	)
+);
