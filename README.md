@@ -4,6 +4,7 @@
 This project focuses on optimizing viable cell count (VCC) in bioprocess manufacturing using statistical modeling and machine learning techniques in JMP. The goal is to identify optimal process conditions that maximize cell yield by analyzing experimental data from bioprocess operations.
 
 ## Project Structure
+```
 Bioprocess-Viable-Cell-Yield-Optimization/
 │
 ├── README.md                       # Project overview, methodology, results
@@ -28,6 +29,7 @@ Bioprocess-Viable-Cell-Yield-Optimization/
 ├── results/                          # Figures
     ├── ss1.PNG                       # Screenshot 1 (Optimum conditions via prediction profiler)
     └── ss2.PNG                       # Screenshot 2 (Prediction profiler settings)
+```
 
 ## Dataset
 - **Source**: Kaggle - "Bioprocess - Modelling of Titer Production"
