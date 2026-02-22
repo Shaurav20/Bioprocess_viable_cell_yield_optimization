@@ -165,7 +165,7 @@ Saved the screenshots (at maximum desirability setting) as **ss1.png** and **ss2
 This project is licensed under the MIT License. You are free to use, modify, and distribute this code with appropriate attribution.
 
 ## Author
-**Shaurav Bhattacharyya**
+Shaurav Bhattacharyya
 
 ## Acknowledgements
 - **Kaggle** for providing the "Bioprocess - Modelling of Titer Production" dataset
